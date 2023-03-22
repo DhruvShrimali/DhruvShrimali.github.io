@@ -12,17 +12,16 @@ function closeMenu() {
 
 function checkforscroll() {
     let y = window.pageYOffset;
-    console.log(y);
+    //console.log(y);
     if(y > 0){
         document.getElementById("header").classList.remove("myStyle1");
         document.getElementById("header").classList.add("myStyle");
-        console.log("white");
+        //console.log("white");
         list.add("myStyle");
     }else{
         document.getElementById("header").classList.remove("myStyle");
         document.getElementById("header").classList.add("myStyle1");
-        console.log("none");
+        //console.log("none");
     }
-
   }
   
