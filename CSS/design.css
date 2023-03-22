@@ -1,0 +1,496 @@
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'font1';
+    src: url("../Fonts/font1.woff2");
+}
+@font-face {
+    font-family: 'font2';
+    src: url("../Fonts/font2.woff2");
+}
+@font-face {
+    font-family: 'font3';
+    src: url("../Fonts/font3.woff2");
+}
+
+body{
+    margin: 0 0;
+    padding: 0;
+    font-family: 'font1','font2','font3', Helvetica;
+}
+
+header{
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    background-color: none;
+    transition: 300ms;
+}
+.myStyle{
+    background-color: white;
+    border-bottom: 2px solid rgb(220,220,220);
+}
+.myStyle1{
+    background-color: none;
+}
+.flex{
+    display:flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.first{
+    display:flex;
+    align-items: center;
+}
+.first h2{
+    font-family: 'font1';
+    font-weight: 100;
+    font-size: 3.25em;
+    padding-top: 0;
+}
+.flex{
+    padding: 25px 0;
+    width: calc(100vw - 80px);
+}
+.inline{
+    display: inline-block; 
+}
+.hamburger img{
+    width: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: 300px auto;
+    z-index: 2;
+    background-color: rgba(40,40,40,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0s;
+}
+aside a:link{
+    clear: both;
+    text-decoration: none;
+}
+aside a:visited{
+    clear: both;
+    text-decoration: none;
+}
+aside .logo{
+    float:left;
+    width: 60px;
+    padding-right: 20px;
+}
+aside div{
+    clear: both;
+}
+aside .text{
+    font-size: 0.9em;
+    font-family: 'font3';
+    margin-top: 20px;
+}
+aside .text a:link{
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+aside .text a:visited{
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.sidebar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'font2';
+    font-weight: 100;
+}
+.spacehere{
+    margin-top: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.spacehere p{
+    margin: auto 0;
+}
+.phoneflex{
+    display:flex;
+    margin-bottom: 40px;
+}
+.closebtn{
+    padding:calc(100vw - 300px);
+    font-size: 0 !important;
+    cursor: default;
+}
+
+
+
+.button1 img{
+    width: 20px;
+    padding: 0px;
+    padding-right: 5px;
+}
+.button1, .button2{
+    min-height: 1.5em;
+    border: none;
+    font-family: 'font3';
+    font-size: 1em;
+    font-weight: 100;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.button1:link, .button2:link{
+    text-decoration: none;
+}
+.button1:visited, .button2:visited{
+    text-decoration: none;
+}
+.button1:link{
+    color: black;
+}
+.button1:visited{
+    color: black;
+}
+.button2:link{
+    color: white;
+}
+.button2:visited{
+    color: white;
+}
+.button1{
+    padding: 12px 16px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 1px rgba(100,100,100,0.3);
+    margin-left: auto;
+    margin-right: 20px;
+}
+.button1:hover{
+    background-color: rgb(204,204,204);
+}
+.button2{
+    padding: 12px 16px;
+    background-color: black;
+    border-radius: 50px;
+}
+.button2:hover{
+    background-color: rgb(51,51,51);
+}
+.button3 a:link{
+    color: white;
+}
+.button3 a:visited{
+    color: white;
+}
+.button3{
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'font3';
+    padding: 15px;
+    background-color: black;
+    border-radius: 8px;
+}
+.button3:hover{
+    background-color: rgb(51,51,51);
+}
+.button4 a:link{
+    color: white;
+}
+.button4 a:visited{
+    color: white;
+}
+.button4{
+    padding: 15px;
+    background-color: black;
+    font-size: 1.1em;
+    border-radius: 8px;
+    text-align: center;
+    cursor:pointer;
+}
+.button4:hover{
+    background-color: rgb(51,51,51);
+}
+.button5 a:link{
+    color: black;
+}
+.button5 a:visited{
+    color: black;
+}
+.button5{
+    padding: 15px;
+    margin-top: 8px;
+    background-color: rgb(226,226,226);
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    cursor:pointer;
+}
+.button5:hover{
+    background-color: rgb(203,203,203);
+}
+.button6 a:link, .button7 a:link{
+    color: black;
+}
+.button6 a:visited, .button7 a:visited{
+    color: black;
+}
+.button6, .button7{
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 8px;
+    font-size: 0.9em;
+    background-color: rgb(226,226,226);
+    border-radius: 50px;
+    cursor:pointer;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.button6:hover, .button7:hover{
+    background-color: rgb(203,203,203);
+}
+.button6 img, .button7 img{
+    width: 15px;
+    padding-right: 10px;
+}
+
+.form{
+    display: flex;
+    margin-bottom: 25px;
+}
+.label1{
+    background-color: white;
+    display:inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.label1 img{
+    width:20px;
+    padding: 15px;
+}
+.label1 input{
+    border:none;
+    font-size: 1em;
+    margin: 0;
+    padding-right: 300px;
+}
+.label1:hover{
+    border-bottom: 2px solid black;
+    transition: 300ms;
+}
+textarea:focus, .label1 input:focus{
+    outline: none;
+}
+
+
+.label2 input:-webkit-appearance{
+    outline: none;
+    border-radius: 0;
+    border: none;
+}
+.label2{
+    outline: none;
+    border-radius: 0;
+    border:none;
+    margin-right: 10px;
+    width: 200px;
+}
+.heading p{
+    font-family: 'font3';
+    font-size: 0.9em;
+    font-weight: 100;
+}
+.heading p a:visited{
+    color: black;
+}
+
+.first{
+    min-height: 100vh;
+    background-image: url("../Images/background.png");
+    background-size: cover;
+    background-position: center right;
+}
+.common{
+    margin: 0 40px;
+}
+.sidebar{
+    padding: 25px;
+}
+
+.list p{
+    float:right;
+    font-family: 'font3';
+    font-weight: 100;
+}
+.list p a:visited{
+    color: black;
+}
+.list h2{
+    font-size: 2.2em;
+    font-weight: 100;
+    font-family: 'font1';
+}
+.list{
+    margin-top: 80px;
+}
+.list img{
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+.grid1{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 20px;
+}
+.grid2{
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'font2';
+    font-weight: 100;
+    font-size: 1em;
+    gap:30px;
+
+}
+.grid3{
+    clear: both;
+    display: grid;
+    margin-bottom: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'font2';
+    font-weight: 100;
+    font-size: 1em;
+    gap:30px;
+
+}
+.grid2 a:link, .grid3 a:link, .grid5 a:link{
+    text-decoration: none;
+    color: black;
+}
+.grid2 a:visited, .grid3 a:visited, .grid5 a:visited{
+    text-decoration: none;
+    color: black;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid rgb(240,240,240);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.grid5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'font2';
+    font-weight: 100;
+    gap:20px;
+}
+.grid5 a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.grid-item1 h4{
+    font-style: 'font3';
+    font-weight: 100;
+    font-size: 1.7em;
+    padding: 0;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.grid-item1 p{
+    text-decoration: underline;
+    font-style: 'font2';
+    font-weight: 100;
+    cursor: pointer;
+}
+.grid-item1 img{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    cursor: pointer;
+}
+.grid-item4:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+.grid-item4 img{
+    width:135px;
+}
+.flex-item{
+    margin-top: auto;
+}
+.flex-item a img:first-of-type{
+    margin-right: 10px;
+}
+.grid-item5 a img{
+    width:20px;
+}
+
+.linebreak{
+    border-bottom: 1px solid rgb(220,220,220);
+    margin-bottom: 80px;
+}
+
+.flex2, .flex3{
+    display:flex;
+    font-family: 'font2';
+    font-weight: 100;
+    font-size: 0.9em;
+}
+.flex3{
+    margin-bottom: 80px;
+}
+.slast5, .slast6, .slast7{
+    margin-left: 40px;
+}
+.slast4{
+    margin-left: auto;
+}
+.flex2 img{
+    width: 15px;
+    margin-right: 20px;
+}
+.flex2 a:link{
+    text-decoration: none;
+}
+.flex2 a:visited{
+    text-decoration: none;
+    color: black;
+}
+.flex2 a:hover{
+    text-decoration: underline;
+}
+
+
+.last1{
+    margin-left: auto;
+}
+.last2{
+    margin-left: 40px;
+}
+
+.last1 a:link{
+    text-decoration: none;
+}
+.last1 a:hover{
+    text-decoration: underline;
+}
+.last1 a:visited{
+    text-decoration: none;
+    color: black;
+}
