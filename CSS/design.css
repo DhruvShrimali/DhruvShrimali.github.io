@@ -312,6 +312,9 @@ textarea:focus, .label1 input:focus{
     font-size: 0.9em;
     font-weight: 100;
 }
+.heading p a:link{
+    color: black;
+}
 .heading p a:visited{
     color: black;
 }
